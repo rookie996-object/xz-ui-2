@@ -65,6 +65,7 @@ import Icon from 'components/Icon.vue';
 import { useDark, useToggle } from '@vueuse/core';
 import { useAnimation } from '@/stores/animation';
 
+// dark config
 const isDark = useDark({
   selector: 'html',
   attribute: 'class',
