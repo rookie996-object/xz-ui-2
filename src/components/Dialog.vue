@@ -9,7 +9,7 @@
     <slot></slot>
     <footer class="text-right px-4 py-3 border-t">
       <Button size="small">{{ props.confirmText }}</Button>
-      <Button type="default" size="small">取消</Button>
+      <Button type="default" size="small">{{ props.cancelText }}</Button>
     </footer>
   </div>
 </template>
@@ -28,6 +28,10 @@ const props = defineProps({
   confirmText: {
     type: String,
     default: '确认'
+  },
+  cancelText: {
+    type: String,
+    default: '取消'
   }
 });
 </script>
